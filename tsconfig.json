@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@frog/common-ui": ["src/common-ui"],
+      "@frog/common-ui/*": ["src/common-ui/*"],
+      "@frog/utils": ["src/utils"],
+      "@frog/utils/*": ["src/utils/*"],
+      "@frog/hooks": ["src/hooks"],
+      "@frog/hooks/*": ["src/hooks/*"],
+      "@frog/icons": ["src/icons"],
+      "@frog/icons/*": ["src/icons/*"]
+    },
+    // 生成类型声明文件
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationDir": "./dist"
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
